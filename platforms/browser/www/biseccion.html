@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Arithmós</title>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-dark bg-primary nav-custom">
+
+
+
+
+      <div class="container">
+
+          <!--Collapse content-->
+          <div  id="collapseEx2">
+              <!--Links-->
+              <ul class="nav navbar-nav">
+
+                <li class="nav-item">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4 class="nav-link left-marg">  <a href="#menu-toggle" id="menu-toggle" class="hidden-sm-up"><i class="fa fa-bars" aria-hidden="true"></i></a><span class="left-marg">Bisección</span></h4>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+          </div>
+          <!--/.Collapse content-->
+
+      </div>
+
+  </nav>
+  <!--/.Navbar-->
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Solución Ecuaciones</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="biseccion.html">Bisección</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="reglafalsa.html">Regla Falsa</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="newton.html">Newton</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="puntofijo.html">Punto Fijo</a>
+              </li class="sidebar-brand">
+              <li class="sidebar-brand">
+                  <a href="secante.html">Secante</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Solución Sistemas Ecua</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="cholesky.html">Cholesky</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="crout.html">Crout</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="doolittle.html">Doolittle</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaEscalado.html">EG Escalado</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaParcial.html">EG Parcial</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaPivoteo.html">EG Total</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaSimple.html">EG Simple</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="LuGaussianaSimple.html">LU Gaussiana Simple</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Integración Númerica</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="jacobi.html">Jacobi</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="gaussSeidel.html">Gauss Seidel</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Interpolación</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="lagrange.html">LaGrange</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="intNewton.html">Interpolación Newton</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Integración</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="trapSen.html">Trapecio Sencillo</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="trapComp.html">Trapecio Compuesto</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpUnTercio.html">Simpson 1/3</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpUnTercioGen.html">Simpson 1/3 G</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpTresOctavos.html">Simpson 3/8 </a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpTresOctavosGen.html">Simpson 3/8 G</a>
+              </li>
+              <li class="sidebar-brand">
+                  <p>------------------------------</p>
+              </li>
+                            <li class="sidebar-brand">
+                  <br>
+                  <br>
+                  <br>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <form>
+                          <div class="contenedor">
+
+                            <div class="md-form">
+                              <input id="f" class="form-control" type="text" value="f(x) = exp(2x-14) + cos(3x) - x^2 + 6"]>
+                              <label for="f" class="">Función</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="vi" class="form-control" type="text" value="2">
+                              <label for="vi" class="">Valor Inicial</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="vf" class="form-control" type="text" value="3">
+                              <label for="vf" class="">Valor Superior</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="ni" class="form-control" type="text" value="11">
+                              <label for="ni" class="">Número De Iteraciones</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="tol" class="form-control" type="text" value="0.0005">
+                              <label for="tol" class="">Toleracia</label>
+                            </div>
+
+                          </div>
+                          <br/>
+                          <p>
+                            <input class= "btn btn-primary btn-sm" id="calc" type="button"  value="Calcular">
+                            <input class= "btn btn-primary btn-sm" id="simular" type="button"  value="Simular" data-toggle="modal" data-target="#simularModal">
+                            <input class= "btn btn-primary btn-sm" id="guia" type="button"  value="Guía" data-toggle="modal" data-target="#guiaModal">
+                          </p>
+                        </form>
+
+
+                      <div class="tabs-wrapper">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tabs-3 red" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Solución</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Gráficas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Ayuda</a>
+                            </li>
+                        </ul>
+
+
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+
+                            <!--Panel 1-->
+                            <div class="tab-pane fade in active" id="panel1" role="tabpanel">
+                                <br>
+
+
+                                <!--Panel-->
+                                <div class="card">
+                                    <div class="card-block">
+                                        <p id="mensaje" class="card-text">Mensaje</p>
+                                    </div>
+                                </div>
+                                <!--/.Panel-->
+
+                                <br>
+
+
+                                <div class="table-responsive">
+                                  <table class="table table-sm" border="1" id="res">
+                                      <thead>
+                                          <tr><td>i</td><td>x inf</td><td>x sup</td><td>xm</td><td>f(xm)</td><td>Error</td></tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr></tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+
+                              <input class= "btn btn-primary btn-sm" id="reset" type="reset">
+
+                            </div>
+                            <!--/.Panel 1-->
+
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="panel2" role="tabpanel">
+
+                                <form id="form">
+                                  <label for="eq">Enter an equation:</label>
+                                  <input type="text" id="eq" value="f(x) = exp(2x-14) + cos(3x) - x^2 + 6" />
+                                  <input type="submit" value="Draw" />
+                                </form>
+
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-6 col-lg-offset-3">
+                                      <div id="plot"></div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                            </div>
+                            <!--/.Panel 2-->
+
+                            <!--Panel 3-->
+                            <div class="tab-pane fade" id="panel3" role="tabpanel">
+                                <div class="card">
+                                  <div class="card-block">
+                                    <img src="http://matematica.laguia2000.com/wp-content/uploads/2011/03/032011_1646_Mtododebise21.png">
+                                    El método de la bisección busca encontrar una raíz con precisión de una tolerancia definida mediante la evaluación de intervalos más y más pequeños. Estos intervalos salen de calcular el punto medio del intervalo y descartando el sobrante del intervalo que no contenga la raíz.
+
+
+                                    Si el método encuentra un resultado directo de una raíz retorna este valor pero su principal criterio de éxito es encontrar un valor aproximado de la raíz que existe en ese intervalo con una cercanía o error absoluto definida por la tolerancia ingresada.
+                                  </div>
+                                </div>
+                            </div>
+                            <!--/.Panel 3-->
+
+                        </div>
+
+                      </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Modal Simluacion -->
+    <div class="modal fade" id="simularModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Simulación</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <img src="img/biseccion.gif">
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Live preview-->
+
+    <!-- Modal Guia -->
+    <div class="modal fade" id="guiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Guía</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  -Función: Ingrese la función que quiera encontrar la raíz de.
+                  <br>
+                  <br>
+                  -Valor Inicial: Numero que va a ser el valor inferior del intervalo a evaluar.
+                  <br>
+                  <br>
+                  -Valor Superior: Numero que representa el valor superior del intervalo a evaluar.
+                  <br>
+                  <br>
+                  -Número de Iteraciones: Número máximo de iteraciones del algoritmo a realizar.
+                  <br>
+                  <br>
+                  -Tolerancia: Precisión deseada del resultado a buscar.
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Live preview-->
+
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.3/math.min.js"></script>
+
+    <!-- load http://maurizzzio.github.io/function-plot/ -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/biseccion.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <title>Arithmós</title>
+
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-dark bg-primary nav-custom">
+
+
+
+
+      <div class="container">
+
+          <!--Collapse content-->
+          <div  id="collapseEx2">
+              <!--Links-->
+              <ul class="nav navbar-nav">
+
+                <li class="nav-item">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4 class="nav-link left-marg">  <a href="#menu-toggle" id="menu-toggle" class="hidden-sm-up"><i class="fa fa-bars" aria-hidden="true"></i></a><span class="left-marg">LaGrange</span></h4>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+          </div>
+          <!--/.Collapse content-->
+
+      </div>
+
+  </nav>
+  <!--/.Navbar-->
+
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Solución Ecuaciones</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="biseccion.html">Bisección</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="reglafalsa.html">Regla Falsa</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="newton.html">Newton</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="puntofijo.html">Punto Fijo</a>
+              </li class="sidebar-brand">
+              <li class="sidebar-brand">
+                  <a href="secante.html">Secante</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Solución Sistemas Ecua</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="cholesky.html">Cholesky</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="crout.html">Crout</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="doolittle.html">Doolittle</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaEscalado.html">EG Escalado</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaParcial.html">EG Parcial</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaPivoteo.html">EG Total</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="eliminacionGaussianaSimple.html">EG Simple</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="LuGaussianaSimple.html">LU Gaussiana Simple</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Integración Númerica</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="jacobi.html">Jacobi</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="gaussSeidel.html">Gauss Seidel</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Interpolación</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="lagrange.html">LaGrange</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="intNewton.html">Interpolación Newton</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="" class="ppal">Integración</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="trapSen.html">Trapecio Sencillo</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="trapComp.html">Trapecio Compuesto</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpUnTercio.html">Simpson 1/3</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpUnTercioGen.html">Simpson 1/3 G</a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpTresOctavos.html">Simpson 3/8 </a>
+              </li>
+              <li class="sidebar-brand">
+                  <a href="simpTresOctavosGen.html">Simpson 3/8 G</a>
+              </li>
+              <li class="sidebar-brand">
+                  <p>------------------------------</p>
+              </li>
+                            <li class="sidebar-brand">
+                  <br>
+                  <br>
+                  <br>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+
+
+                        <form>
+                          <div class="contenedor">
+
+
+                            <div class="md-form">
+                              <input id="x" class="form-control" type="text" value="0.5, 0.6, 0.7">
+                              <label for="x" class="">X</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="y" class="form-control" type="text" value="0.45, 0.5646, 0.6442">
+                              <label class="" for="y">Y</label>
+                            </div>
+
+                            <div class="md-form">
+                              <input id="punto" class="form-control" type="text" value="0.7">
+                              <label for="punto" class="">Punto </label>
+                            </div>
+
+
+
+                          </div>
+                          <br/>
+                          <p>
+                            <input class= "btn btn-primary btn-sm" id="calc" type="button"  value="Calcular">
+
+                            <input class= "btn btn-primary btn-sm" id="guia" type="button"  value="Guía" data-toggle="modal" data-target="#guiaModal">
+                          </p>
+                        </form>
+
+
+                      <div class="tabs-wrapper">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tabs-3 red" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Solución</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Ayuda</a>
+                            </li>
+                        </ul>
+
+
+                        <!-- Tab panels -->
+                        <div class="tab-content">
+
+                            <!--Panel 1-->
+                            <div class="tab-pane fade in active" id="panel1" role="tabpanel">
+                                <br>
+
+
+                                <!--Panel-->
+                                <div class="card">
+                                    <div class="card-block">
+                                        <p id="mensaje" class="card-text"></p>
+                                    </div>
+                                </div>
+                                <!--/.Panel-->
+
+                                <br>
+
+
+
+
+                              <input class= "btn btn-primary btn-sm" id="reset" type="reset">
+
+                            </div>
+                            <!--/.Panel 1-->
+
+
+
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="panel3" role="tabpanel">
+                                <div class="card">
+                                  <div class="card-block">
+                                    Se consideran n los puntos x dados de la función, con su respectivo valor de y; dados estos puntos existe un único polinomio de grado a lo sumo de n-1 que pase por ellos.
+                                    Para poder definir el polinomio se hallan los valores de cada Li(x) con i desde 1 hasta n.
+                                    Una vez calculados los valores de L, podemos confirmar el polinomio y posteriormente, algunos cálculos adicionales.
+                                    Los valores de L se pueden calcular de la siguiente estructura, adicionalmente se puede observar la estructura del polinomio de Lagrange.
+                                  </div>
+                                </div>
+
+                            </div>
+                            <!--/.Panel 2-->
+
+                        </div>
+
+                      </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <!-- Modal Guia -->
+    <div class="modal fade" id="guiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Guía</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  -X: Valores de X sobre los cuales se realizará la interpolación.
+                  <br>
+                  <br>
+                   -Y: Valores de Y sobre los cuales se realizará la interpolación.
+                   <br>
+                   <br>
+                   -Punto: Valor a interpolar.
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Live preview-->
+
+
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.3/math.min.js"></script>
+
+<!-- load http://maurizzzio.github.io/function-plot/ -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://wzrd.in/standalone/function-plot@1.14.0"></script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/lagrange.js"></script>
+</body>
+
+</html>
